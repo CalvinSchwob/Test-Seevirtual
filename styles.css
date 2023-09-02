@@ -139,6 +139,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
+    justify-content: center;
 }
 
 .qoute-text {
@@ -153,3 +154,15 @@ body {
     color: #1F2937;
     width: 50%;
 }
+
+.qoute-source {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    justify-content: end;
+}
+
+.qoute-source p {
+    font-weight: bold;
+}
+
