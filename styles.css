@@ -64,7 +64,7 @@ body {
 
     cursor: pointer;
     color: #fff;
-    background-color: #0d6efd;
+    background-color: #3882F6;
     font-weight: 400;
     line-height: 1.5;
     border: 1px solid transparent;
@@ -90,4 +90,66 @@ body {
     width: auto;
     height: 400px;
     margin: 32px;
+    flex-shrink: 1;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-text h2 {
+    display: flex;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+    margin-bottom: 100px;
+}
+
+.service-cards,
+.service-cards-1,
+.service-cards-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    align-items: center;
+}
+
+.service-card p {
+    text-align: center;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.service-card div {
+    border: 2px solid #3882F6;
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.qoute-text {
+    display: flex;
+    justify-content: center;
+}
+
+.qoute-text p {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    width: 50%;
 }
