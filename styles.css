@@ -44,6 +44,7 @@ body {
     display: flex;
     background: #1F2937;
     color: #F9FAF8;
+    flex-wrap: wrap;
 }
 
 .first-text {
@@ -76,18 +77,20 @@ body {
     display: flex;
     flex: 1;
     justify-content: center;
+    min-width: 50%;
 }
 
 .first-img {
     display: flex;
     width: 100%;
-    height: auto;
     justify-content: center;
 }
 
 .first-img img {
-    width: auto;
-    height: 400px;
+    max-width: 100%; /* Das Bild wird nie breiter als sein Container */
+    height: auto;
+    width: auto; /* Das Bild passt sich dem verfügbaren Platz an */
+    max-height: 400px; /* Maximale Höhe für das Bild */
     margin: 32px;
     flex-shrink: 1;
 }
@@ -98,12 +101,18 @@ body {
     flex-direction: column;
 }
 
+.second-text {
+    display: flex;
+    justify-content: center;
+}
+
 .second-text h2 {
     display: flex;
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .service-cards,
@@ -111,6 +120,7 @@ body {
 .service-cards-2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .service-card {
