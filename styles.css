@@ -28,6 +28,7 @@ body {
     justify-content: space-evenly;
     margin: 32px;
     font-size: 18px;
+    flex-wrap: wrap;
 }
 
 .header-logo {
@@ -52,6 +53,18 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
+    max-width: -webkit-fill-available;
+}
+
+.first-text-container h1,
+.first-text-container p {
+    display: flex;
+    text-align: center;
+    max-width: -webkit-fill-available;
+    width: auto;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    box-sizing: border-box;
 }
 
 .first-text-container {
